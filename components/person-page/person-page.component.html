@@ -1,0 +1,11 @@
+<div id="person-main">
+
+    <h1>People</h1>
+    <div id="person-container">
+        <app-person *ngFor="let person of persons" [person]="person"></app-person>
+    </div>
+    <app-new-person (sendPerson)="getPersonFromNewPerson($event)" ></app-new-person>
+
+
+
+</div>

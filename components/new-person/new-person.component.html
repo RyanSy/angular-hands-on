@@ -1,0 +1,19 @@
+<form id="new-person">
+    <div>
+        <label for="name">Name</label>
+        <!-- Inside of our form, we use [(ngModel)] to map the value of the input to the ts file var-->
+        <input [(ngModel)]="name" id="name" name="name" type="text" required/>
+    </div>
+    <div>
+        <label for="background">Background</label>
+        <!-- Inside of our form, we use [(ngModel)] to map the value of the input to the ts file var-->
+        <input [(ngModel)]="background" id="background" name="background" type="text" required/>
+    </div>
+    <div>
+        <label for="factoid">Factoid</label>
+        <!-- Inside of our form, we use [(ngModel)] to map the value of the input to the ts file var-->
+        <input [(ngModel)]="factoid" id="background" name="factoid" type="text" required/>
+    </div>
+</form>
+
+<button (click)="onSubmit()">Submit new Person</button>
